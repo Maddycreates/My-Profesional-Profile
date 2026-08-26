@@ -6,6 +6,7 @@
     <meta name="theme-color" content="#17211f">
     <meta name="format-detection" content="telephone=no">
     <meta name="description" content="The personal profile of Ahmad Zaman, an IT and computer science learner, coding enthusiast, and cyber security expert.">
+        <link rel="icon" href="profile.png" type="image/png">
     <title>Ahmad Zaman | IT & Cyber Security</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,9 +22,11 @@
             </a>
             <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
             <nav id="site-nav" class="site-nav" aria-label="Main navigation">
-                <a href="#about">About</a>
-                <a href="#focus">Focus areas</a>
-                <a class="nav-contact" href="mailto:z2zleadero@gmail.com">Contact <span>↗</span></a>
+                <a class="active" href="#about">About</a>
+                <a href="#experience">Experience</a>
+                <a href="#skills">Skills</a>
+                <a href="#education">Education</a>
+                <a class="nav-contact" href="#contact">Contact <span>↗</span></a>
             </nav>
         </header>
 
@@ -38,7 +41,7 @@
                         <a class="button button-quiet" href="#about">Discover my story <span>↓</span></a>
                     </div>
                 </div>
-                <div class="hero-visual" aria-label="Portrait of Ahmad Zaman">
+                    <div class="hero-visual reveal" role="img" aria-label="Portrait of Ahmad Zaman">
                     <img class="profile-photo" src="profile.png" alt="Ahmad Zaman wearing a black suit and tie">
                     <div class="visual-grid"></div>
                     <div class="orbit orbit-one"></div>
@@ -82,7 +85,7 @@
                 </div>
             </section>
 
-            <section id="focus" class="focus-section" aria-labelledby="focus-title">
+            <section id="skills" class="focus-section" aria-labelledby="focus-title">
                 <div class="focus-heading"><p class="eyebrow">03 / What drives me</p><h2 id="focus-title">Current <em>focus</em></h2></div>
                 <div class="focus-list">
                     <article class="focus-item"><span class="focus-number">01</span><h3>Cyber security</h3><p>Understanding how digital systems stay resilient, private, and protected.</p></article>
@@ -91,8 +94,27 @@
                 </div>
             </section>
 
+            <section id="experience" class="experience-section" aria-labelledby="experience-title">
+                <div class="section-intro">
+                    <p class="eyebrow">03 / Experience</p>
+                    <h2 id="experience-title">Practice makes<br><em>progress.</em></h2>
+                </div>
+                <div class="experience-content">
+                    <article class="timeline-item">
+                        <span class="timeline-number">01</span>
+                        <div><span class="education-type">Current internship</span><h3>IT Artificer</h3><p>Building practical skills through web development, coding exercises, software design, and teamwork.</p></div>
+                    </article>
+                    <div class="experience-note"><span>WORKING PRINCIPLE</span><strong>Learn carefully.<br>Build usefully.</strong></div>
+                </div>
+            </section>
+
+            <section class="highlights-section" aria-labelledby="highlights-title">
+                <div class="section-intro"><p class="eyebrow">05 / Why work with me</p><h2 id="highlights-title">A practical<br><em>point of view.</em></h2></div>
+                <div class="highlights-grid"><article><span>01</span><h3>Curiosity</h3><p>Asking better questions and staying open to continuous learning.</p></article><article><span>02</span><h3>Reliability</h3><p>Approaching study, training, and shared work with consistency.</p></article><article><span>03</span><h3>Team spirit</h3><p>Learning through cooperation, communication, and shared goals.</p></article></div>
+            </section>
+
             <section class="details-section" aria-labelledby="details-title">
-                <div class="section-intro"><p class="eyebrow">04 / A little more about me</p><h2 id="details-title">The details<br><em>matter.</em></h2></div>
+                <div class="section-intro"><p class="eyebrow">06 / A little more about me</p><h2 id="details-title">The details<br><em>matter.</em></h2></div>
                 <div class="details-grid">
                     <div class="detail-block"><span class="detail-label">Location</span><strong>Peshawar, Yakatoot</strong></div>
                     <div class="detail-block"><span class="detail-label">Languages</span><strong>English / Urdu / Pashto</strong></div>
@@ -101,15 +123,17 @@
                 </div>
             </section>
 
-            <section class="contact-section" aria-labelledby="contact-title">
-                <p class="eyebrow">05 / Start a conversation</p>
+            <section id="contact" class="contact-section" aria-labelledby="contact-title">
+                <p class="eyebrow">07 / Start a conversation</p>
                 <h2 id="contact-title">Have an idea?<br><em>Let’s talk.</em></h2>
-                <div class="contact-details"><a href="mailto:z2zleadero@gmail.com">z2zleadero@gmail.com</a><a href="https://wa.me/923160968169" target="_blank" rel="noopener noreferrer">WhatsApp: 0316-0968169</a></div>
+                <div class="contact-details"><a href="mailto:z2zleadero@gmail.com">z2zleadero@gmail.com</a><a href="https://wa.me/923160968169" target="_blank" rel="noopener noreferrer">WhatsApp: 0316-0968169</a><span>Peshawar, Yakatoot</span></div>
+                <form class="contact-form"><label for="name">Your name</label><input id="name" name="name" type="text" autocomplete="name" required><label for="email">Email address</label><input id="email" name="email" type="email" autocomplete="email" required><label for="message">Message</label><textarea id="message" name="message" rows="4" required></textarea><button class="button button-primary" type="submit">Send message <span>↗</span></button><p class="form-status" role="status" aria-live="polite"></p></form>
             </section>
         </main>
 
         <footer class="site-footer"><span>Ahmad Zaman / Personal profile</span><span>© <span id="year"></span> All rights reserved</span></footer>
     </div>
+    <button class="back-to-top" type="button" aria-label="Back to top">↑</button>
     <script src="index.js"></script>
 </body>
 </html>
